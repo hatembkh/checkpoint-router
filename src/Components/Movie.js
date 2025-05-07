@@ -2,9 +2,9 @@ import { Rating } from "@mui/material";
 import { useParams } from "react-router-dom";
 
 const Movie = ({ movies }) => {
-  const { titles } = useParams();
+  const { id } = useParams();
   const found = movies.find((el) => 
-    el.title.toLowerCase() === titles.toLowerCase()
+    el.id == id
   );
 
   if (!found) return <div style={styles.notFound}>Movie not found!</div>;

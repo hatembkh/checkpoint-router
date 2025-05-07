@@ -33,7 +33,7 @@ function App() {
             <ListMovie movies={movies} titleSearch={titleSearch} ratingSearch={ratingSearch} />
           </>
         } />
-        <Route path='/Movie/:titles' element={<Movie movies={movies} />} />
+        <Route path='/Movie/:id' element={<Movie movies={movies} />} />
       </Routes>
     </div>
   );

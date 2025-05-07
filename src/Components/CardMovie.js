@@ -27,7 +27,7 @@ const CardMovie = ({ el }) => {
             </ListGroup>
 
             <Card.Body>
-                <Link to={`/Movie/${el.title}`}><Button variant="outline-primary" >Click To Watch</Button></Link>
+                <Link to={`/Movie/${el.id}`}><Button variant="outline-primary" >Click To Watch</Button></Link>
 
             </Card.Body>
 

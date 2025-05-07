@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 // import './Home.css'; // We'll create this CSS file
 
 const Home = () => {
@@ -51,7 +52,7 @@ const Home = () => {
             </div>
             
             <div className="cta-section">
-                <button className="explore-button">Explore Movies</button>
+                <Link to={'/MovieList'}><button className="explore-button">Explore Movies</button></Link>
             </div>
         </div>
     );
