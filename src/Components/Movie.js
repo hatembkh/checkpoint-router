@@ -1,6 +1,7 @@
 import { Rating } from "@mui/material";
+import { Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-
+import { Link } from 'react-router-dom';
 const Movie = ({ movies }) => {
   const { id } = useParams();
   const found = movies.find((el) => 
@@ -12,6 +13,7 @@ const Movie = ({ movies }) => {
   return (
     <div style={styles.container}>
       {/* Movie Header */}
+      <Link to={'/'}><Button variant="outline-primary">Home</Button></Link>
       <div style={styles.header}>
         <h1 style={styles.title}>{found.title}</h1>
         <p style={styles.releaseDate}>
@@ -42,7 +44,7 @@ const Movie = ({ movies }) => {
           </div>
         </div>
       </div>
-
+      
       {/* Trailer */}
       <div style={styles.trailerContainer}>
         <iframe
